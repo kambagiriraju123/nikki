@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bilbo+Swash+Caps&family=Inter:opsz,wght@14..32,500&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap");
+:root { --tombol-bg: rgb(20 4 4 / 59%); --tombol-teks: #fff; --tombol-bingkai: #fff; --bingkai: 8px; --bingkai-kiri: 1.3px solid var(--tombol-bingkai); --bingkai-kanan: 1.3px solid var(--tombol-bingkai); --gaya-font: 'Archivo', sans-serif; --gaya-font2: 'Dancing Script', sans-serif; }
+body { font-family: Archivo, sans-serif; height: 100vh; }
+@keyframes fanim { 
+  0% { background-position: 0% 0%; }
+  25% { background-position: 100% 100%; }
+  50% { background-position: 0% 100%; }
+  75% { background-position: 50% 50%; }
+  100% { background-position: 0% 0%; }
+}
+#bodyblur { opacity: 0; position: fixed; inset: 0px; background: linear-gradient(rgb(255, 225, 225), rgba(255, 33, 125, 0.88)), url("r.jpg"); transition: 1s; }
+#wallpaper { width: 100%; height: 100%; transform: scale(2); transition: 1.3s; }
+#beneranblur { position: fixed; inset: 0px; backdrop-filter: blur(0px); transition: 3s; }
+@keyframes jj { 
+  0% { transform: scale(1.1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1.1); }
+}
+@keyframes rts { 
+  0% { transform: scale(0.1); }
+  100% { transform: scale(1); }
+}
+@keyframes rto { 
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+@keyframes aniopa { 
+  0% { transform: scale(1); }
+  50% { transform: scale(0.75); }
+  100% { transform: scale(1); }
+}
+@keyframes rtf { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes rt { 
+  0% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+@keyframes kont { 
+  0% { left: -1px; top: -3px; }
+  50% { left: 1px; top: 3px; }
+  100% { left: -1px; top: -3px; }
+}
+blockquote { position: absolute; opacity: 0; visibility: hidden; background: rgba(0, 0, 0, 0.73); border-radius: 18px 0px; box-shadow: rgba(255, 255, 255, 0.3) 0px 7px 29px 0px; transform: scale(0.1); transition: 1s; margin-top: 120px; margin-left: 0px; margin-right: 0px; color: var(--tombol-teks); text-shadow: rgba(0, 0, 0, 0.8) 0px 2px 2px; }
+blockquote { width: 400px; text-align: center; line-height: 1.3em; padding: 20px 25px; }
+blockquote::before { content: attr(data-text); opacity: 0.7; font-family: sans-serif; position: absolute; left: 8px; top: 8px; min-width: 15px; font-size: 16px; text-align: center; }
+blockquote::after { content: ""; position: absolute; border: 1px solid rgb(255, 255, 255); border-radius: 18px 0px; inset: -8px; }
+blockquote p { font-size: 16px; font-weight: 700; line-height: 1.4em; transition: 0.5s; }
+blockquote > #kalimatb, blockquote > .sty2 { font-size: 15px; font-weight: 400; }
+blockquote > #pesan4 { margin-top: 25px; }
+blockquote > .sty2 { line-height: 1em; }
+blockquote p:not(#opsL, #kalimat, #kalimatb, .sty2) { display: none; }
+blockquote > #opsL { text-align: right; font-size: 11px; font-weight: 400; line-height: 0; margin-top: 24px; color: white; opacity: 0; transition: 0.2s; }
+#waktu { display: none; }
+#kado1, #kado2, #kado3 { font-size: 16px; font-weight: 400; }
+#kalimatAkhir { transform: scale(0.1); }
+#kado1 { position: absolute; opacity: 0; }
+#kalove { font-size: 25px; line-height: 0; }
+.kolombar .inibar { position: absolute; opacity: 0; visibility: hidden; background-color: rgb(255, 255, 255); height: 5px; width: 100%; }
+#Tombol { position: relative; opacity: 0; margin: 0px; display: flex; list-style: none; transform: scale(0.1); transition: 1s; }
+#Tombol a { cursor: pointer; display: inline-flex; align-items: center; margin: 12px 0px; transition: 0.2s; padding: 10px; outline: 0px; border: 1px solid rgb(255, 255, 255); border-radius: 18px; line-height: 15px; background: rgba(0, 0, 0, 0.5); color: var(--tombol-teks); font-size: 12px; font-weight: 700; white-space: nowrap; overflow: hidden; box-shadow: rgba(255, 255, 255, 0.3) 0px 7px 29px 0px; z-index: 1; }
+#Bn { margin: 12px 0px 12px 12px !important; }
+#Bn2 { position: absolute; opacity: 0; width: 0px; }
+#Content { animation-name: none; animation-duration: 3s; animation-iteration-count: infinite; position: relative; opacity: 0; margin-top: 50px; width: 100%; height: 100vh; transition: 0.7s; }
+#Content > * { display: flex; align-items: center; text-align: center; justify-content: center; margin-top: 19px; }
+.kumpulanstiker > img { display: none; background: rgba(255, 255, 255, 0.2); box-shadow: rgba(255, 255, 255, 0.3) 0px 4px 30px; backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 50%; padding: 10px; width: 100px; height: 100px; margin: 20px 0px; }
+#fotostiker { opacity: 0.1; transition: 1.2s; transform: scale(0.1); }
+.halo { position: relative; margin: 15px 0px 20px; font-size: 18px !important; }
+.halo.sty2 { font-family: var(--gaya-font2); font-size: 24px !important; margin-top: 20px !important; }
+.halo.sty3 { position: absolute !important; font-size: 14px !important; font-weight: 400 !important; margin: 30px 20px !important; }
+#kalimatbawah { position: absolute; opacity: 0; transform: scale(0.3); margin: 50px 0px; font-family: var(--gaya-font2); font-size: 20px; font-weight: 700; color: white; text-shadow: rgba(0, 0, 0, 0.8) 0px 2px 2px; transition: 0.5s; }
+#tanggal { position: absolute; opacity: 0; transform: scale(0.3); transition: 0.5s; }
+#fotolove img { transition: 0.5s; width: 75px; height: 75px; padding: 0px; background: none; }
+#kadoIn img { display: inline-flex; background: none; width: 317px; height: 280px; margin-bottom: 26px; transition: 0.3s; }
+#ket, .halo { text-shadow: rgba(10, 3, 3, 0.67) 1px 1px 2px; font-size: 1.3rem; letter-spacing: 2px; font-weight: 700; margin-left: 36px; color: rgb(36, 6, 6); }
+#kadoIn img:hover { transform: scale(0.9); }
+#kolombaru { position: absolute; opacity: 0; display: flex; transform: scale(0.1); transition: 1s; align-items: center; text-align: center; justify-content: center; z-index: 1; }
+#kolombaru > li { margin: 8px; padding: 0px; list-style-type: none; }
+#kolombaru li { opacity: 0.8; display: flex; font-size: 30px; }
+#kolombaru li:hover { opacity: 0.5; transform: scale(1.15); transition: 0.3s; }
+.kolomrange { padding: 0px; background: none; position: relative; z-index: 1; display: none; transition: 1s; align-items: center; }
+.kolomrange .inirange { width: 100%; height: 40px; margin-right: 15px; display: flex; align-items: center; text-align: center; justify-content: center; }
+.kolomrange .inirange input { height: 10px; width: 100%; appearance: none; outline: none; background: rgb(242, 242, 242); border-radius: 25px; box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px inset; }
+.kolomrange .inirange input::-webkit-slider-thumb { appearance: none; width: 20px; height: 20px; border-radius: 50%; border: 3px solid rgb(0, 111, 255); background: white; transition: 0.2s; }
+.kolomrange .inirange input::-webkit-slider-thumb:hover { border: 5px solid rgb(0, 111, 255); }
+.kolomrange .inivalue { color: white; font-size: 20px; }
+.swal2-modal > * { font-size: 16px; }
+.swal2-title { line-height: 1.3em; font-size: 17px; text-align: center; padding: 15px 30px 0px; }
+.swal2-timer-progress-bar-container > * { opacity: 0.7; background: rgb(0, 182, 255); margin: 0px 2px; }
+.swal2-modal { background: rgb(255, 255, 255); box-shadow: rgba(74, 74, 74, 0.57) 0px 4px 30px; backdrop-filter: blur(2px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 8px; max-width: 330px; top: -60px; }
+.swal2-styled.swal2-confirm, .swal2-styled.swal2-cancel { position: relative; background-color: rgb(72, 57, 235); color: rgb(255, 255, 255); border-radius: 18px; z-index: 1; transition: 0.2s; }
+.fa-snowflake { opacity: 0.3; color: white; font-size: 20px; position: absolute; animation: auto linear 0s 1 normal none running heartMove; top: -10vh; z-index: 0; }
+@keyframes heartMove { 
+  0% { transform: translateY(-10vh); }
+  100% { transform: translateY(100vh); }
+}
+.sembunyi, #pesanditolak > *, #kado2, #kado3 { display: none !important; }
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation { background: linear-gradient(rgb(255, 225, 225), rgba(255, 33, 125, 0.88)), url("r.jpg"); height: 100vh; }
+.kumpulanstiker img { transform: scale(2) !important; }
+#ket { margin-top: 3px !important; backdrop-filter: blur(8px); }
